@@ -1,7 +1,7 @@
 package ru.n1kk0n.removedublicatesortedlist;
 
 public class Solution {
-    public static ListNode removeDublicates(ListNode head) {
+    public static ListNode removeDuplicates(ListNode head) {
         ListNode curr = head;
         //cover empty list case
         if (curr == null) {
@@ -39,7 +39,7 @@ public class Solution {
 
         showList(first);
 
-        ListNode newHead = removeDublicates(first);
+        ListNode newHead = removeDuplicates(first);
 
         showList(newHead);
     }
