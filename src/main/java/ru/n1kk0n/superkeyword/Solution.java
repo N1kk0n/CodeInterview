@@ -9,6 +9,7 @@ public class Solution {
         brother.showAndChange();
         sister.showAndChange();
         Parent parent = new Parent();
-        System.out.println("Parent: " + Parent.staticValue);
+        System.out.println("Parent (static): " + Parent.staticValue);
+        System.out.println("Parent: " + parent.getValue());
     }
 }

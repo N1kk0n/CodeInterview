@@ -20,7 +20,7 @@ public class Solution {
 
     public static void main(String[] args) {
         TestObject object = new TestObject();
-        Integer I = new Integer(10);
+        Integer I = Integer.valueOf(10);
         String s = "Hello";
         int i = 1;
         
