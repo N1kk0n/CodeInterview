@@ -13,6 +13,19 @@ public class Solution {
             System.out.println("finally");
         }
     }
+
+    public void methodWithReturn() {
+        System.out.println("methodWithReturn: ");
+        try {
+            System.out.println("try");
+            throw new Exception("Exception");
+        } catch (Exception e) {
+            System.out.println("catch with return");
+            return;
+        } finally {
+            System.out.println("finally");
+        }
+    }
     
     public void methodWithExit() {
         System.out.println("methodWithExit: ");
@@ -30,7 +43,9 @@ public class Solution {
     public static void main(String[] args) {
         Solution s = new Solution();
         
-        s.methodWithExit();
         s.methodWithoutExit();
+        s.methodWithReturn();
+        s.methodWithExit();
+
     }
 }

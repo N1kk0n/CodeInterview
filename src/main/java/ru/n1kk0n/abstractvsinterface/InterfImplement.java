@@ -6,5 +6,4 @@ public class InterfImplement implements Interf {
     public void log(String s) {
         System.out.println(s);
     }
-    
 }
