@@ -38,7 +38,7 @@ public class Solution {
         }, SATURDAY {
             @Override
             public String toString() {
-                return "Saturday";
+                return super.toString();
             }
         }
     }
