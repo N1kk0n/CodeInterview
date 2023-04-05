@@ -38,16 +38,39 @@ public class Solution {
         }, SATURDAY {
             @Override
             public String toString() {
-                return super.toString();
+                return "Saturday";
             }
         }
     }
 
-    public static void main(String[] args) {
-        System.out.println(DayOfWeek.SATURDAY);
-        System.out.println(Arrays.stream(DayOfWeek.values()).distinct().collect(Collectors.toList()));
-        for (DayOfWeek value : DayOfWeek.values()) {
-            System.out.println(value);
+    public enum EmptyEnum {}
+
+    public enum Response {
+        OK(200, "Success"), NOT_FOUND(404, "Data not found");
+        private int code;
+        private String description;
+
+        public int getCode() {
+            return code;
         }
+
+        public String getDescription() {
+            return description;
+        }
+
+        private Response(int code, String description) {
+            this.code = code;
+            this.description = description;
+        }
+
+        @Override
+        public String toString() {
+            return super.toString() + ", code: " + this.code + ", description: " + this.description;
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println(Arrays.stream(DayOfWeek.values()).distinct().collect(Collectors.toList()));
+        System.out.println(Arrays.stream(EmptyEnum.values()).distinct().collect(Collectors.toList()));
+        System.out.println(Arrays.stream(Response.values()).distinct().collect(Collectors.toList()));
     }
 }

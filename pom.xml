@@ -8,7 +8,7 @@
   <artifactId>CodeInterview</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>test</name>
+  <name>CodeInterview</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
