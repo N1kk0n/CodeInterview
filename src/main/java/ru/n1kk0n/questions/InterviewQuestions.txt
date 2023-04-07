@@ -87,20 +87,13 @@ Enum
 
 + 4.7 Можем ли мы указать конструктор внутри Enum?
 
-4.8 В чем разница между == и equals()?
++ 4.8 В чем разница между == и equals()?
 
-4.9 Что делает метод ordinal() в Enum?
-
-4.10 Можно ли использовать Enum с TreeSet или TreeMap в Java?
-
-4.11 Как связаны методы ordinal() и compareTo() в Enum?
-
-4.13 Можно ли использовать Enum в switch case?
-
++ 4.9 Что делает метод ordinal() в Enum? Как связаны методы ordinal() и compareTo() в Enum? Можно ли использовать Enum с TreeSet или TreeMap в Java?
 
 String
 
-5.1 Дайте характеристику String в Java.
++ 5.1 Дайте характеристику String в Java.
 
 5.2 Какие есть способы создания объекта String? Где он создается?
 

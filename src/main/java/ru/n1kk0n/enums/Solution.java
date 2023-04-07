@@ -68,9 +68,21 @@ public class Solution {
             return super.toString() + ", code: " + this.code + ", description: " + this.description;
         }
     }
+
+    public enum Colors { RED, YELLOW, GREEN }
+
+    public enum TrafficLights { RED, YELLOW, GREEN }
+
     public static void main(String[] args) {
         System.out.println(Arrays.stream(DayOfWeek.values()).distinct().collect(Collectors.toList()));
         System.out.println(Arrays.stream(EmptyEnum.values()).distinct().collect(Collectors.toList()));
         System.out.println(Arrays.stream(Response.values()).distinct().collect(Collectors.toList()));
+
+        Response code = null;
+        //System.out.println(code.equals(Response.OK)); //NullPointerException
+        System.out.println(code == Response.OK);
+
+        //System.out.println(Colors.RED == TrafficLights.RED); //Not compile: error
+        System.out.println(Colors.RED.equals(TrafficLights.RED));
     }
 }
