@@ -127,14 +127,6 @@ Collections
 6.10 Как отсортировать коллекцию элементов?
 
 6.11 Valid parentheses (задача с LeetCode).
-
-6.12 Reverse Linked List (задача с LeetCode).
-
-6.13 Дано String s, найти длину максимального substring без повтора символов.
-
-6.14 Дайте краткую характеристику class object в Java.
-
-6.15 Определить, является ли односвязный LinkedList палиндромом.
  
 
 Exceptions
