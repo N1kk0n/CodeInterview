@@ -1,22 +1,26 @@
 package ru.n1kk0n.removeelement;
 
-import java.util.ArrayList;
-
 public class Solution {
     public static int removeElement(int[] nums, int val) {
-        ArrayList<Integer> savingElements = new ArrayList<>(nums.length);
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == val)
-                continue;
-            savingElements.add(nums[i]);
+        int valCount = 0;
+        int head = 0, tail = nums.length - 1, temp;
+        while (head < tail) {
+            if (nums[head] == val) {
+                while (nums[tail] == val && head < tail) {
+                    tail--;
+                }
+                temp = nums[head];
+                nums[head] = nums[tail];
+                nums[tail] = temp;
+                tail--;
+            } else
+                head++;
         }
         for (int i = 0; i < nums.length; i++) {
-            nums[i] = -1;
+            if (nums[i] != val)
+                valCount++;
         }
-        for (int i = 0; i < savingElements.size(); i++) {
-            nums[i] = savingElements.get(i);
-        }
-        return savingElements.size();
+        return valCount;
     }
 
     public static void main(String[] args) {
